@@ -4,26 +4,130 @@
     box-sizing: border-box;
 }
 
-
-.head{
-    background-color: lightskyblue;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.roboto{
+    font-family: 'Roboto', sans-serif;
 }
 
+/*----------Utility----------*/
 .container{
     width: 80%;
+    margin: auto;
 }
 
-.logo{}
+.head{
+    background-color: rgb(21, 107, 160);
+}
 
+.home-button{
+    text-decoration: none;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.active{
+    color: white;
+}
+
+.label{
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 40px;
+}
+
+.f-w-b{
+    font-weight: bold;
+}
+
+.f-white{
+    color: white;
+}
+/*----------Utility----------*/
+
+.logo{
+    margin-left: 0;
+    vertical-align: middle;
+    margin-left: 10%;
+}
+
+
+.head nav{
+    display: inline-block;
+    line-height: 80px;
+    vertical-align: middle;
+    margin-left: 11%;
+    margin-right: 15%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    margin: 10px;
+    height: 10px;
+    font-weight: bold;
+} 
+
+/*----------Label----------*/
+.access{
+    color: black;
+    background-color: white;
+}
+
+.download-for-mac{
+    background-color: white;
+    color: black;
+    display: inline-block;
+    
+    margin-left: 15%;
+}
+
+.open-browser{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+}
+/*----------Label----------*/
+
+/*----------Hero----------*/
 .hero{
-    height: 30vh;
-    background-color: red;
+    height: calc(70vh - 80px);
+    background-image: url('../img/jumbo.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
+
+.hero div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero div h2{
+    font-size: 50px;
+}
+
+.hero div p{
+    font-size: 15px;
+}
+/*----------Hero----------*/
+
+
 
 .main-section{
     height: 40vh;
 }
 
+/*----------Main-Section----------*/
 .sec-1{
     background-color: yellow;
 }
@@ -39,7 +143,9 @@
 .sec-4{
     background-color: lightgray;
 }
+/*----------Main-Section----------*/
 
+/*----------section-4-column----------*/
 .column-1{}
 
 .column-2{}
@@ -49,7 +155,4 @@
 .column-4{}
 
 .column-5{}
-
-footer{
-    background-color: rgba(20, 14, 48, 0.842);
-}
+/*----------section-4-column----------*/
