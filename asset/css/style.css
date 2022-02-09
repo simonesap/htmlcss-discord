@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.head{
+    background-color: lightskyblue;
+}
+
+.container{
+    width: 80%;
+}
+
+.logo{}
+
+.hero{
+    height: 30vh;
+    background-color: red;
+}
+
+.main-section{
+    height: 40vh;
+}
+
+.sec-1{
+    background-color: yellow;
+}
+
+.sec-2{
+    background-color: greenyellow;
+}
+
+.sec-3{
+    background-color: violet;
+}
+
+.sec-4{
+    background-color: lightgray;
+}
+
+.column-1{}
+
+.column-2{}
+
+.column-3{}
+
+.column-4{}
+
+.column-5{}
+
+footer{
+    background-color: rgba(20, 14, 48, 0.842);
+}
