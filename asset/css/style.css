@@ -44,6 +44,13 @@
 .f-white{
     color: white;
 }
+
+.b-arrow::before{
+    display: inline-block;
+    content: '🠓';
+    color: black;
+    font-size: 15px;
+}
 /*----------Utility----------*/
 
 .logo{
@@ -57,8 +64,8 @@
     display: inline-block;
     line-height: 80px;
     vertical-align: middle;
-    margin-left: 11%;
-    margin-right: 15%;
+    margin-left: 9%;
+    margin-right: 13%;
 }
 
 nav ul li{
@@ -72,19 +79,22 @@ nav ul li a{
     margin: 10px;
     height: 10px;
     font-weight: bold;
-} 
+}
 
 /*----------Label----------*/
 .access{
     color: black;
     background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .download-for-mac{
     background-color: white;
     color: black;
     display: inline-block;
-    
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: 15%;
 }
 
@@ -93,6 +103,8 @@ nav ul li a{
     color: white;
     display: inline-block;
     margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /*----------Label----------*/
 
@@ -122,14 +134,33 @@ nav ul li a{
 /*----------Hero----------*/
 
 
-
+/*----------Main-Section----------*/
 .main-section{
-    height: 40vh;
+    height: 100vh;
 }
 
-/*----------Main-Section----------*/
-.sec-1{
-    background-color: yellow;
+.sec-1 div{
+    height: 70%;
+    width: 20%;
+}
+
+.sec-1 img{
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    float:left
+}
+
+.sec-1 div{
+    float: left;
+    margin-top: 13%;
+    margin-bottom: 10%;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .sec-2{
