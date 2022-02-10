@@ -15,8 +15,8 @@
     margin: auto;
 }
 
-.head{
-    background-color: rgb(21, 107, 160);
+header{
+    background-color: #2b62ea;
 }
 
 .home-button{
@@ -47,7 +47,7 @@
 
 .b-arrow::before{
     display: inline-block;
-    content: '🠓';
+    content: '🡇';
     color: black;
     font-size: 15px;
 }
@@ -62,7 +62,6 @@
 .logo{
     margin-left: 0;
     vertical-align: middle;
-    margin-left: 10%;
 }
 
 
@@ -70,8 +69,7 @@
     display: inline-block;
     line-height: 80px;
     vertical-align: middle;
-    margin-left: 9%;
-    margin-right: 13%;
+    margin-left:15%;
 }
 
 nav ul li{
@@ -82,8 +80,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    margin: 10px;
-    height: 10px;
+    margin: 20px;
     font-weight: bold;
 }
 
@@ -93,6 +90,9 @@ nav ul li a{
     background-color: white;
     padding-left: 20px;
     padding-right: 20px;
+    float: right;
+    vertical-align: middle;
+    margin-top: 1.5%;
 }
 
 .download-for-mac{
@@ -132,10 +132,12 @@ nav ul li a{
 
 .hero div h2{
     font-size: 50px;
+    text-align: center;
 }
 
 .hero div p{
     font-size: 15px;
+    text-align: center;
 }
 /*----------Hero----------*/
 
@@ -149,35 +151,31 @@ main{
 }
 
 /*---------sec-1----------*/
-.sec-1 img{
+.sec-1 .row{
     width: 60%;
     margin-top: 10%;
-    margin-bottom: 10%;
     float:left;
 }
 
-.sec-1 div{
+.sec-1 .text{
     float: left;
     margin-top: 13%;
-    margin-bottom: 10%;
+    margin-left: 1%;
     height: 70%;
     width: 20%;
 }
 /*---------sec-1----------*/
 
 /*---------sec-2----------*/
-.sec-2 img{
+.sec-2 .row{
     width: 60%;
-    margin-top: 10%;
-    margin-bottom: 10%;
     float:right;
     margin-right: 15%;
 }
 
-.sec-2 div{
+.sec-2 .text{
     float: left;
-    margin-top: 13%;
-    margin-bottom: 10%;
+    margin-top: 3%;
     margin-left: 5%;
     height: 70%;
     width: 20%;
@@ -185,19 +183,14 @@ main{
 /*---------sec-2----------*/
 
 /*---------sec-3----------*/
-.sec-3 img{
+.sec-3 .row{
     width: 60%;
-    margin-top: 10%;
-    margin-bottom: 10%;
     float:left;
-    margin-left: -25%;
-    
 }
 
-.sec-3 div{
+.sec-3 .text{
     float: left;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 3%;
     height: 70%;
     width: 20%;
 }
@@ -209,18 +202,23 @@ main{
 }
 
 .sec-4 img{
-    margin-left: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .sec-4 h2{
-    display: inline-block;
+    display: inline;
+    text-align: center;
     margin-left: 25%;
+}
 
+.sec-4 p{
+    display: inline;
+    text-align: center;
 }
 
 #star{
-    margin-left: 20%;
-    display: inline-block;
+    margin-left: 30%;
 }
 
 .sec-4 h3{
@@ -229,7 +227,7 @@ main{
 
 .sec-4 a{
     margin-top: 2vh;
-    margin-left: 41%;
+    margin-left: 43%;
     background-color: rgba(152, 125, 177, 0.781);
 }
 
@@ -238,13 +236,18 @@ main{
 /*----------Main-Section----------*/
 
 footer{
-    height: 40vh;
+    height: 50vh;
     background-color: rgba(0, 0, 0, 0.829);
-    margin-top: 50vh;
 }
 /*----------section-4-column----------*/
 .column-1 ul li{
     list-style-type: none;
+}
+
+.column-1 nav ul li i{
+    color: white;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 
 .column-1 img{
@@ -268,16 +271,43 @@ footer{
 .column-1 h2{
     font-size: 35px;
     color: rgb(101, 181, 207);
+    display: inline-block;
+    top: 0;
+    left:0;
+    margin-top: 30%;
+    margin-bottom: 2%;
 }
 
-.column-1{}
+.column-1{
+    width: 30%;
+    float: left;
+}
 
 .column-2{
+    width: 10%;
+    float: left;
+    margin-top: 10%;
+    margin-right: 5%;
 }
 
-.column-3{}
+.column-3{
+    width: 10%;
+    float: left;
+    margin-top: 10%;
+    margin-right: 5%;
+}
 
-.column-4{}
+.column-4{
+    width: 10%;
+    float: left;
+    margin-top: 10%;
+    margin-right: 5%;
+}
 
-.column-5{}
+.column-5{
+    width: 10%;
+    float: left;
+    margin-top: 10%;
+    margin-right: 5%;
+}
 /*----------section-4-column----------*/
