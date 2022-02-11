@@ -9,6 +9,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*----------Utility----------*/
 .container{
     width: 80%;
@@ -57,8 +61,17 @@ header{
     display: table;
     clear: both;
 }
-/*----------Utility----------*/
 
+.wave-gray img{
+    filter: invert(0.95);
+    transform: translate(0px,5px);
+ }
+
+.wave-white img{
+    background-color: rgba(242, 242, 242, 0.060);
+    filter: invert(2);
+}
+/*----------Utility----------*/
 .logo{
     margin-left: 0;
     vertical-align: middle;
@@ -84,6 +97,13 @@ nav ul li a{
     font-weight: bold;
 }
 
+.row img{
+    transition: transform 2s;
+}
+
+.text{
+    transition: transform 2s;
+}
 /*----------Label----------*/
 .access{
     color: black;
@@ -101,7 +121,7 @@ nav ul li a{
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 .open-browser{
@@ -112,7 +132,42 @@ nav ul li a{
     padding-left: 20px;
     padding-right: 20px;
 }
+
 /*----------Label----------*/
+/*----------Hover----------*/
+nav ul li a:hover{
+    text-decoration-line: underline;
+}
+
+.download-for-mac:hover{
+    box-shadow: 5px 5px 20px black;
+}
+
+.open-browser:hover{
+    box-shadow: 5px 5px 20px black;
+}
+
+.access:hover{
+    box-shadow: 5px 5px 20px black;
+}
+
+.row img:hover{
+    transform: scale(1.5);
+}
+
+.text:hover{
+    transform: scale(1.5);
+}
+
+.row-2 h3:hover{
+    transform: scale(1.5);
+}
+
+.foot-a:hover{
+    text-decoration-line: underline;
+}
+/*----------Hover----------*/
+/*----------Utility----------*/
 
 /*----------Hero----------*/
 .hero{
@@ -146,108 +201,144 @@ nav ul li a{
 main{
     height: 100%;
 }
-.main-section{
-    height: 90vh;
-}
 
 /*---------sec-1----------*/
 .sec-1 .row{
-    width: 60%;
+    width: 40%;
     margin-top: 10%;
     float:left;
+    margin-left: 5%;
 }
 
 .sec-1 .text{
     float: left;
     margin-top: 13%;
-    margin-left: 1%;
-    height: 70%;
+    height: 30%;
     width: 20%;
+    margin-left: 20%;
 }
+
+.sec-1 .text h2{
+    font-size: 30px;
+}
+
 /*---------sec-1----------*/
 
 /*---------sec-2----------*/
+.sec-2{
+    background-color: rgba(242,242,242,255);
+    width: 98.9vw;
+    padding-bottom: 5%;
+}
+
 .sec-2 .row{
-    width: 60%;
+    width: 40%;
     float:right;
-    margin-right: 15%;
+    margin-right: 22%;
+    margin-top: 2%;
 }
 
 .sec-2 .text{
     float: left;
-    margin-top: 3%;
-    margin-left: 5%;
-    height: 70%;
+    margin-top: 4%;
+    margin-left: 15%;
+    height: 30%;
     width: 20%;
 }
+
+.sec-2 .text h2{
+    font-size: 30px;
+}
+
 /*---------sec-2----------*/
 
 /*---------sec-3----------*/
+.sec-3{
+    padding-bottom: 5%;
+}
+
 .sec-3 .row{
-    width: 60%;
+    width: 40%;
     float:left;
+    margin-left: 8%;
+    margin-top: 10%;
 }
 
 .sec-3 .text{
     float: left;
-    margin-top: 3%;
-    height: 70%;
+    height: 30%;
     width: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
 }
+
+.sec-3 .text h2{
+    font-size: 30px;
+}
+
 /*---------sec-3----------*/
 
 /*---------sec-4----------*/
 .sec-4{
-    margin-bottom: 15%;
+    padding-bottom: 8%;
+    background-color: rgba(242,242,242,255);
+    width: 98.9vw;
 }
 
 .sec-4 img{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
 }
 
 .sec-4 h2{
     display: inline;
     text-align: center;
-    margin-left: 25%;
+    font-size: 30px;
+    margin-left: 28%;
 }
 
 .sec-4 p{
-    display: inline;
+    display: inline-bloxk;
     text-align: center;
 }
 
-#star{
-    margin-left: 30%;
+.row-2{
+    width: 50%;
 }
 
 .sec-4 h3{
     text-align: center;  
+    font-size: 25px;
+    transition: transform 2s;
 }
 
 .sec-4 a{
-    margin-top: 2vh;
-    margin-left: 43%;
+    margin-top: 5vh;
+    margin-left: 36%;
     background-color: rgba(152, 125, 177, 0.781);
 }
-
 /*---------sec-4----------*/
-
 /*----------Main-Section----------*/
 
-footer{
-    height: 50vh;
-    background-color: rgba(0, 0, 0, 0.829);
-}
 /*----------section-4-column----------*/
+/*---------Column-1----------*/
+.column-1{
+    width: 20%;
+    float: left;
+}
+
 .column-1 a i{
     color: white;
+    font-size: 20px;
     margin-top: 10px;
     margin-right: 20px;
 }
 
 .column-1 img{
     width: 20px;
+}
+
+.social{
+    display: block;
 }
 
 .arrow::after{
@@ -266,50 +357,80 @@ footer{
 
 .column-1 h2{
     font-size: 35px;
-    color: rgb(101, 181, 207);
+    color: rgb(107, 105, 201);
     display: inline-block;
     top: 0;
     left:0;
     margin-top: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 8%;
 }
+/*---------Column-1----------*/
 
-.column-1{
-    width: 30%;
-    float: left;
-}
-
+/*---------Column-2----------*/
 .column-2{
     width: 10%;
     float: left;
-    margin-top: 10%;
-    margin-right: 5%;
+    margin-top: 7%;
+    margin-left: 15%;
 }
+/*---------Column-2----------*/
 
+/*---------Column-3----------*/
 .column-3{
     width: 10%;
     float: left;
-    margin-top: 10%;
-    margin-right: 5%;
+    margin-top: 7%;
+    margin-left: 6%;
 }
+/*---------Column-3----------*/
 
+/*---------Column-4----------*/
 .column-4{
     width: 10%;
     float: left;
-    margin-top: 10%;
-    margin-right: 5%;
+    margin-top: 7%;
+    margin-left: 6%;
 }
+/*---------Column-4----------*/
 
+/*---------Column-5----------*/
 .column-5{
     width: 10%;
     float: left;
-    margin-top: 10%;
-    margin-right: 5%;
+    margin-top: 7%;
+    margin-left: 6%;
+}
+/*---------Column-5----------*/
+
+footer{
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.829);
 }
 
 .foot-a{
     text-decoration: none;
     display: block;
-    margin-bottom: 2%;
+    margin-bottom: 15%;
+}
+
+.col-name{
+    color: rgb(107, 105, 201);
+}
+
+.end-line{
+    margin-top: 2%;
+    height: 0.1%;
+    background-color: rgb(107, 105, 201);
+}
+
+.end-button img{
+    margin-top: 2%;
+}
+
+.recording{
+    float: right;
+    background-color: rgba(106, 105, 201, 0.781);
+    margin-top: 2%;
+    padding: 1%;
 }
 /*----------section-4-column----------*/
